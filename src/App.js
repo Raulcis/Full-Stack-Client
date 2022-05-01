@@ -34,7 +34,7 @@ function App() {
   const [jobDetailed, setJobDetailed] = useState([]);
 
   useEffect(() => {
-    const urlJob = "http://localhost:3001/allJ";
+    const urlJob = "https://cs157aproject.herokuapp.com/allJ";
     try {
       Axios.get(urlJob)
         .then((response) => {
@@ -51,7 +51,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    const urlJob = "http://localhost:3001/all";
+    const urlJob = "https://cs157aproject.herokuapp.com/all";
     try {
       Axios.get(urlJob)
         .then((response) => {
@@ -68,7 +68,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    const urlJob = "http://localhost:3001/idJob";
+    const urlJob = "https://cs157aproject.herokuapp.com/idJob";
     try {
       Axios.get(urlJob)
         .then((response) => {
@@ -87,7 +87,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    const urlCID = "http://localhost:3001/id";
+    const urlCID = "https://cs157aproject.herokuapp.com/id";
     try {
       Axios.get(urlCID)
         .then((response) => {
@@ -121,9 +121,9 @@ function App() {
     const urlJobName = "http://www.localhost:3001/JobName";
     const urlJob = "http://www.localhost:3001/Job";
     const urlCompany = "http://www.localhost:3001/Company";
-    const urlCID = "http://localhost:3001/id";
-    const urlJID = "http://localhost:3001/idJob";
-    const urlData = `http://localhost:3001/Data`;
+    const urlCID = "https://cs157aproject.herokuapp.com/id";
+    const urlJID = "https://cs157aproject.herokuapp.com/idJob";
+    const urlData = `https://cs157aproject.herokuapp.com/Data`;
 
     const enteredCompanyName = companyName;
     const enteredCompanyStanding = companyStanding;
@@ -264,7 +264,7 @@ function App() {
   };
 
   const getScores = () => {
-    const url = "http://localhost:3001/id";
+    const url = "https://cs157aproject.herokuapp.com/id";
     try {
       Axios.get(url)
         .then((response) => {
@@ -286,7 +286,7 @@ function App() {
   };
 
   const getall = () => {
-    const urlCom = "http://localhost:3001/allC/" + companyName;
+    const urlCom = "https://cs157aproject.herokuapp.com/allC/" + companyName;
     try {
       Axios.get(urlCom)
         .then((response) => {
@@ -303,7 +303,7 @@ function App() {
   };
 
   const getallJob = () => {
-    const urlJob = "http://localhost:3001/all/" + jobName;
+    const urlJob = "https://cs157aproject.herokuapp.com/all/" + jobName;
     try {
       Axios.get(urlJob)
         .then((response) => {
@@ -320,7 +320,7 @@ function App() {
   };
 
   const getallDetailJob = () => {
-    const urlJob = "http://localhost:3001/allD/" + jobName;
+    const urlJob = "https://cs157aproject.herokuapp.com/allD/" + jobName;
     try {
       Axios.get(urlJob)
         .then((response) => {
