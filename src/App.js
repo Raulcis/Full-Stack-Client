@@ -114,13 +114,13 @@ function App() {
   const postAction = (e, action) => {
     e.preventDefault(); // prevent refresh and submission
 
-    const urlLocation = "http://www.localhost:3001/Location";
-    const urlFieldC = "http://www.localhost:3001/Field";
-    const urlFieldJ = "http://www.localhost:3001/JobField";
-    const urlCompanyName = "http://www.localhost:3001/CompanyName";
-    const urlJobName = "http://www.localhost:3001/JobName";
-    const urlJob = "http://www.localhost:3001/Job";
-    const urlCompany = "http://www.localhost:3001/Company";
+    const urlLocation = "https://cs157aproject.herokuapp.com/Location";
+    const urlFieldC = "https://cs157aproject.herokuapp.com/Field";
+    const urlFieldJ = "https://cs157aproject.herokuapp.com/JobField";
+    const urlCompanyName = "https://cs157aproject.herokuapp.com/CompanyName";
+    const urlJobName = "https://cs157aproject.herokuapp.com/JobName";
+    const urlJob = "https://cs157aproject.herokuapp.com/Job";
+    const urlCompany = "https://cs157aproject.herokuapp.com/Company";
     const urlCID = "https://cs157aproject.herokuapp.com/id";
     const urlJID = "https://cs157aproject.herokuapp.com/idJob";
     const urlData = `https://cs157aproject.herokuapp.com/Data`;
